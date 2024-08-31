@@ -1,0 +1,83 @@
+/* ================================= 自定义属性 ============================================= */
+/* 自定义属性值 */
+:root {
+    --font-size: 25px;
+    --font-family: 'kaishu';
+    --ThemeColor: #f5f5f5;
+    --MouseStyle: url('https://www.liuzehe.top/upload/bkphotos/default.cur')
+}
+
+
+/* ================================= 全局标签样式更改 ============================================= */
+/* 全局样式 */
+* {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    box-sizing: border-box;
+    cursor: var(--MouseStyle), default;
+}
+
+
+
+/* 设置html和body的样式 */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--ThemeColor);
+}
+
+/* 代码块code样式 */
+code {
+    color: crimson;
+    background-color: rgba(222, 222, 222, 0.8);
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-family: Consolas, "Courier New", Courier, monospace;
+    font-size: 20px;
+}
+
+
+
+/* -------------- start -------------- */
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 100%;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(128, 76, 46, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff75c3, #ffa647, #ffe83f, #9fff5b, #70e2ff, #cd93ff);
+}
+
+/* -------------- end -------------- */
+
+
+
+
+
+/* ================================= 引入外部资源 ============================================= */
+/* 导入字体 */
+@font-face {
+    font-family: "katong";
+    src: url("./Style/刘欢卡通手书2.0.ttf");
+}
+
+@font-face {
+    font-family: "kaishu";
+    src: url("./Style/瑞美加张清平硬笔楷书.ttf");
+}
+
+@font-face {
+    font-family: "xiaoshitou";
+    src: url("./Style/也字工厂小石头.ttf");
+}
