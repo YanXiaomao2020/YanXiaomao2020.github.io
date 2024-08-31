@@ -1,0 +1,137 @@
+<!-- 
+迭代版本:4.4.1
+更新时间:2024-08-18 -->
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博知坊 -- 知识的汇聚之所，开启智慧之旅！</title>
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-logo" onclick="refreshPage()">
+            <img src="./Images/navbag-logo.png" alt="PNG">
+            <span>博知坊</span>
+        </div>
+        <div class="navbar-menu" id="navbar-menu">
+            <button onclick="Side_to_Side_back(this, 'bt-0')">首页</button>
+            <button onclick="Side_to_Side(this, 'bt-1')">基金对冲</button>
+            <button onclick="Side_to_Side(this, 'bt-2')">前端设计</button>
+            <button onclick="Side_to_Side(this, 'bt-3')">数据分析</button>
+            <button onclick="Side_to_Side(this, 'bt-4')">网络运维</button>
+            <button onclick="Side_to_Side(this, 'bt-5')">Climb行动</button>
+        </div>
+    </nav>
+
+    <!-- 左侧待办列表 -->
+    <section class="left-TO-DO">
+        <h2>To-do list</h2>
+        <div class="input-box">
+            <input type="text" id="content" placeholder="三百六十行，行行干破防！嘿嘿~" onfocus="this.placeholder = ''"
+                autocomplete="off">
+        </div>
+        <ol class="list_ol"></ol>
+    </section>
+
+    <!-- 中间子菜单区 -->
+    <section>
+        <!-- 基金菜单 -->
+        <div class="middle-submenu-box" id="bt-1">
+            <div class="Horizontal-layout">
+                <div class="submenu-button-box">方案一</div>
+                <div class="submenu-button-box">方案二</div>
+                <div class="submenu-button-box">方案三</div>
+            </div>
+            <hr>
+            <div class="Vertical-layout">日志</div>
+        </div>
+        <!-- 前端菜单 -->
+        <div class="middle-submenu-box" id="bt-2">
+            <div class="Horizontal-layout">
+                <div class="submenu-button-box">HTML</div>
+                <div class="submenu-button-box">CSS</div>
+                <div class="submenu-button-box">JavaScript</div>
+                <div class="submenu-button-box">Vue.js框架</div>
+                <div class="submenu-button-box">综合技巧</div>
+            </div>
+            <hr>
+            <div class="Vertical-layout">日志</div>
+        </div>
+        <!-- 数分菜单 -->
+        <div class="middle-submenu-box" id="bt-3">
+            <div class="Horizontal-layout">
+                <div class="submenu-button-box">MySQL</div>
+                <div class="submenu-button-box" onclick="window.location.href='./Webs/03_DataAnalysis/02_Excel.html'";>Excel</div>
+                <div class="submenu-button-box">PowerBI</div>
+                <div class="submenu-button-box">Python</div>
+                <div class="submenu-button-box">综合技巧</div>
+            </div>
+            <hr>
+            <div class="Vertical-layout">日志</div>
+        </div>
+        <!-- 运维菜单 -->
+        <div class="middle-submenu-box" id="bt-4">
+            <div class="Horizontal-layout">
+                <div class="submenu-button-box">网络基础</div>
+                <div class="submenu-button-box">Linux</div>
+                <div class="submenu-button-box">Shell脚本</div>
+                <div class="submenu-button-box">Python</div>
+                <div class="submenu-button-box">MySQL</div>
+                <div class="submenu-button-box">华为HCIA认证</div>
+                <div class="submenu-button-box">华为HCIP认证</div>
+            </div>
+            <hr>
+            <div class="Vertical-layout">日志</div>
+        </div>
+        <!-- 考研菜单 -->
+        <div class="middle-submenu-box" id="bt-5">
+            <div class="Horizontal-layout">
+                <div class="submenu-button-box">英语</div>
+                <div class="submenu-button-box">数学</div>
+                <div class="submenu-button-box">政治</div>
+                <div class="submenu-button-box">432 统计学</div>
+                <div class="submenu-button-box">面试</div>
+                <div class="submenu-button-box">行业入门</div>
+            </div>
+            <hr>
+            <div class="Vertical-layout">日志</div>
+
+        </div>
+    </section>
+
+
+    <!-- 右侧休闲区 -->
+    <section class="right-fallow">
+        <img id="randomImg" src="./Images/right-fallow.jpg" alt="点击刷新图片">
+        <button class="secret-btn" onclick="OpenNewPageGirlVideo()"></button>
+    </section>
+
+    <!-- 底部说明 -->
+    <footer class="footer">
+        <p>站长: 燕小猫</p>
+        <p>社交群聊: 180084391</p>
+        <p>最后修改: 2024-8-14</p>
+        <p>版权声明: &copy; 2024 博知坊</p>
+    </footer>
+
+</body>
+
+<!-- 星空背景 -->
+<script src="https://api.cenguigui.cn/api/hudongxingkong"></script>
+<!-- 波浪样式 -->
+<script src="https://api.cenguigui.cn/api/bolang" defer></script>
+<!-- 佛祖保佑 -->
+<script src="./JS/Code_protection.js"></script>
+<!-- 自定义逻辑 -->
+<script src="./JS/index.js"></script>
+
+
+</html>
